@@ -1,0 +1,125 @@
+{
+	"info": {
+		"_postman_id": "1f23f1c6-10ae-4dba-9ff1-3ef7b25708b2",
+		"name": "Carbooking",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "customers",
+			"item": [
+				{
+					"name": "http://127.0.0.1:5000/customers",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "ahmed mohamed",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "ahmed@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "phone",
+									"value": "01271084702",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "Ahmed2365*",
+									"type": "text"
+								},
+								{
+									"key": "image",
+									"value": "",
+									"type": "text"
+								},
+								{
+									"key": "payment_id",
+									"value": "",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "",
+									"value": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": "http://127.0.0.1:5000/customers"
+					},
+					"response": []
+				},
+				{
+					"name": "http://127.0.0.1:5000/customers/1",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": "http://127.0.0.1:5000/customers/1"
+					},
+					"response": []
+				},
+				{
+					"name": "http://127.0.0.1:5000/customers/1",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": "http://127.0.0.1:5000/customers/1"
+					},
+					"response": []
+				},
+				{
+					"name": "http://127.0.0.1:5000/customers/1",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "mohamed",
+									"type": "text"
+								}
+							]
+						},
+						"url": "http://127.0.0.1:5000/customers/1"
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
